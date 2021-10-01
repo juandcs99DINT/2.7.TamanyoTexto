@@ -24,5 +24,22 @@ namespace TamanyoTexto
         {
             InitializeComponent();
         }
+
+        private void tamañoRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton boton = (RadioButton)sender;
+            switch(boton.Tag.ToString())
+            {
+                case "36":
+                    textoACambiarTextBlock.FontSize = 36;
+                    break;
+                case "48":
+                    textoACambiarTextBlock.FontSize = 48;
+                    break;
+                case "72":
+                    textoACambiarTextBlock.FontSize = 72;
+                    break;
+            }
+        }
     }
 }

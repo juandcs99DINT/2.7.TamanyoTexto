@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TamanyoTexto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tamaño del texto" Height="370" Width="965" Icon="assets/48.ico">
     <Grid>
-        
+        <TextBlock x:Name="textoACambiarTextBlock" TextAlignment="Center" HorizontalAlignment="Left" Margin="0,33,0,0" TextWrapping="Wrap" Text="Desarrollo de Interfaces" VerticalAlignment="Top" Height="120" Width="947" FontSize="48" Foreground="#FF5A9BFD" FontWeight="Bold">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="3.4"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <RadioButton x:Name="pequeñoRadioButton" Content="Pequeño" HorizontalAlignment="Left" Margin="144,266,0,0" VerticalAlignment="Top" GroupName="tamañoTexto" Tag="36" Checked="tamañoRadioButton_Checked" Width="74" Height="19" RenderTransformOrigin="0.5,0.5" >
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="medianoRadiButton" Content="Mediano" HorizontalAlignment="Left" Margin="419,267,0,0" VerticalAlignment="Top" GroupName="tamañoTexto" Tag="48" IsChecked="True" Checked="tamañoRadioButton_Checked" Width="74" Height="19" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="grandeRadioButton" Content="Grande" HorizontalAlignment="Left" Margin="718,269,0,0" VerticalAlignment="Top" GroupName="tamañoTexto" Tag="72" Checked="tamañoRadioButton_Checked" Width="74" Height="19" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+
     </Grid>
 </Window>
