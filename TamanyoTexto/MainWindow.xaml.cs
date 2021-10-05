@@ -28,6 +28,8 @@ namespace TamanyoTexto
         private void tamañoRadioButton_Checked(object sender, RoutedEventArgs e)
         {
             RadioButton boton = (RadioButton)sender;
+            // textoACambiarTextBlock.FontSize = double.Parse(boton.Tag.ToString());
+
             switch(boton.Tag.ToString())
             {
                 case "36":
